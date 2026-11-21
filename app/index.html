@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Palms — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="sun" aria-hidden="true"></div>
+    <div>
+      <h1>NEON PALMS</h1>
+      <p class="tag">GTA VI Trophy Guide &amp; Tracker — PlayStation 5 — 100% offline</p>
+    </div>
+  </div>
+  <div class="progress" id="progressBox" aria-live="polite"></div>
+</header>
+
+<div class="audit" id="auditStrip" role="note"></div>
+
+<nav class="tabs" id="viewTabs" aria-label="Views">
+  <button data-view="checklist" class="active">Checklist</button>
+  <button data-view="roadmap">Roadmap</button>
+  <button data-view="missables">Missables</button>
+  <button data-view="nextup">Next Up</button>
+  <button data-view="sources">Sources &amp; Method</button>
+  <span class="tab-spacer"></span>
+  <label class="spoiler-toggle"><input type="checkbox" id="spoilerToggle"> <span>Hide story spoilers</span></label>
+  <button id="exportBtn" class="small">Export</button>
+  <label class="small file-label" for="importFile">Import<input type="file" id="importFile" accept="application/json" hidden></label>
+</nav>
+
+<main id="viewRoot">
+  <section id="view-checklist" class="view active">
+    <div class="panes">
+      <aside class="pane list-pane">
+        <div class="list-tools">
+          <input type="search" id="searchBox" placeholder="Search trophies…" aria-label="Search trophies">
+          <div class="chips" id="kindChips"></div>
+          <div class="row">
+            <select id="gradeFilter" aria-label="Filter by grade">
+              <option value="">All grades</option>
+              <option value="platinum">Platinum</option>
+              <option value="gold">Gold</option>
+              <option value="silver">Silver</option>
+              <option value="bronze">Bronze</option>
+            </select>
+            <select id="earnedFilter" aria-label="Filter by earned">
+              <option value="">All</option>
+              <option value="todo">To-do only</option>
+              <option value="earned">Earned only</option>
+            </select>
+            <select id="sortSelect" aria-label="Sort trophies">
+              <option value="roadmap">Roadmap order</option>
+              <option value="name">Name A–Z</option>
+              <option value="grade">Grade</option>
+            </select>
+          </div>
+        </div>
+        <ul class="trophy-list" id="trophyList"></ul>
+      </aside>
+      <section class="pane detail-pane" id="detailPane" aria-live="polite"></section>
+      <aside class="pane count-pane" id="countPane"></aside>
+    </div>
+  </section>
+  <section id="view-roadmap" class="view"></section>
+  <section id="view-missables" class="view"></section>
+  <section id="view-nextup" class="view"></section>
+  <section id="view-sources" class="view"></section>
+</main>
+
+<footer class="foot">
+  <p>Neon Palms is an unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. No Rockstar artwork is used. Every guide is written in our own words from the cited sources; official trophy names and descriptions are quoted as PlayStation publishes them.</p>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
